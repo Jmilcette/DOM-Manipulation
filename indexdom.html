@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DOMinant HTML</title>
+</head>
+
+<body>
+    <h1 id="maintitle">Learning DOMinant HTML</h1>
+    <h4 id="hi"></h4>
+
+    <p id="marquee">Facts:</p>
+    <ul>
+        <li class="b1color">The DOM is a tree</li>
+        <li class="b1color">HTML tags are also called Element Nodes or just Elements</li>
+        <li class="b1color">You can access DOM components via its elements</li>
+        <li class="b1color">Elements have parents, children, sibling, ancestors, and descendants.</li>
+        <li class="b1color">Selector a: getElementById</li>
+        <li class="b1color">Selector B: getElementByClassName()</li>
+    </ul>
+    <input id="inputName1">
+
+    <button type="button" onclick="myFunction()">Submit</button>
+</body>
+
+<script>
+    // var inputName = prompt("What is your name:");
+    // document.getElementById("subtitle").innerText = "Welcome to the class " + inputName;
+    function myFunction() {
+        var inputname1, hi;
+        var inputName1 = document.getElementById("inputName1").value;
+        document.getElementById("hi").innerHTML = "With yours truly " + inputName1;
+    }
+</script>
+
+</html>
